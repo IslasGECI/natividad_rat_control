@@ -41,4 +41,7 @@ d3.select(window).on("load", () => {
         };
         overlay.setMap(map);
     });
+    map.addListener("click", function(e) {
+        console.log(e);
+    });
 });
