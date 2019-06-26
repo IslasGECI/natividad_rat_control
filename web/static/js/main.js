@@ -42,3 +42,7 @@ d3.select(window).on("load", () => {
         overlay.setMap(map);
     });
 });
+
+function consoleMessage(){
+    console.log("Hola");
+}

@@ -21,3 +21,10 @@ html, body, #map {
     stroke: black;
     stroke-width: 1.5px;
 }
+#button{
+    z-index: 1000001;
+    position: absolute;
+    left: 5px;
+    bottom: 30px;
+    width: 82px;
+}
