@@ -1,4 +1,5 @@
 
-natividad_rat_control/__pycache__/
+*/__pycache__/*
 
 *.xlsx
+.vscode/*
