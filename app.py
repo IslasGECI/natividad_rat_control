@@ -1,5 +1,8 @@
 import os
 from flask import Flask, render_template, send_from_directory
+from natividad_rat_control import get_positions
+
+
 app = Flask(__name__, root_path='',
             template_folder="web/templates", static_url_path='')
 google_maps_key = os.environ["GOOGLE_MAPS_KEY"]
@@ -18,6 +21,10 @@ def send_css(path):
 def index():
     return render_template('index.html', google_maps_key=google_maps_key)
 
+
+@app.route('/positions')
+def positions():
+    return get_positions()
 
 if __name__ == "__main__":
     app.run(debug=True)
