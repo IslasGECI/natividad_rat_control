@@ -21,3 +21,9 @@ html, body, #map {
     stroke: black;
     stroke-width: 1.5px;
 }
+#button{
+    position: absolute;
+    left: 5px;
+    bottom: 30px;
+    width: 82px;
+}
