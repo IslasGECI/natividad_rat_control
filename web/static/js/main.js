@@ -41,8 +41,7 @@ d3.select(window).on("load", () => {
         };
         overlay.setMap(map);
     });
+    document.getElementById("button").onclick = function (){
+        console.log("hola");
+    }
 });
-
-function consoleMessage(){
-    console.log("Hola");
-}
