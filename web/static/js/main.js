@@ -44,4 +44,7 @@ d3.select(window).on("load", () => {
     document.getElementById("button").onclick = function (){
         console.log("hola");
     }
+    map.addListener("click", function(e) {
+        console.log(e);
+    });
 });
